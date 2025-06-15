@@ -1,22 +1,36 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 40px 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  border: 1px solid black;
+  width: 900px;
+  padding: 20px 40px;
+  box-sizing: border-box;
   background-color: white;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* logo left, header right */
   align-items: center;
-  padding: 20px 40px;
-  border-bottom: 2px solid #ccc;
+  gap: 20px;
+  /* Removed border-bottom */
+  margin-bottom: 40px;
 }
 
 header h1 {
   font-size: 28px;
   font-weight: bold;
   color: #333;
+  margin: 0;
+  flex-grow: 1;
+  text-align: right; /* push header text to right */
 }
 
 .uni-logo {
@@ -25,7 +39,7 @@ header h1 {
 }
 
 main {
-  padding: 40px;
+  /* no change */
 }
 
 h2 {
